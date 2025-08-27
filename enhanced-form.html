@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 |FORMS </title>
+</head>
+<style>
+    th {
+        color: hsl(213 27% 16%);
+        font-weight: 600;
+        text-align: left;
+        padding: .75rem 1rem .75rem 1rem;
+        border-color: hsl(213 27% 88%);
+    }
+
+    tr {
+        border-bottom-width: 1px;
+        border-color: hsl(213 27% 88%);
+        border-bottom: 1px solid;
+    }
+
+    td {
+        color: hsl(213 27% 16%);
+        padding: .75rem 1rem .75rem 1rem;
+        border-color: hsl(213 27% 88%);
+        border-bottom: 1px solid;
+    }
+
+    legend {
+        color: hsl(213 27% 16%);
+        font-weight: 600;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        border-color: hsl(213 27% 88%);
+        padding: 0;
+    }
+
+    label {
+        line-height: 1;
+        font-weight: 500;
+        font-size: .875rem;
+    }
+
+    input {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        font-size: .875rem;
+        line-height: 1.25rem;
+        padding: .5rem .75rem .5rem .75rem;
+        border-width: 1px;
+        border-color: hsl(213 27% 88%);
+        width: 100%;
+        height: 2.5rem;
+        border-radius: 6px;
+    }
+
+    textarea {
+        font-size: .875rem;
+        line-height: 1.25rem;
+        padding: .5rem .75rem .5rem .75rem;
+        background-color: hsl(0 0% 99%);
+        border-width: 1px;
+        border-radius: 6px;
+        min-height: 80px;
+        width: 90%;
+    }
+
+    select {
+        font-size: .875rem;
+        line-height: 1.25rem;
+        padding: .5rem .75rem .5rem .75rem;
+        background-color: hsl(0 0% 99%);
+        border-color: hsl(213 27% 88%);
+    }
+</style>
+
+<body style="margin: 0 auto; font-family: sans-serif; background-color: hsl(0 0% 99%);">
+    <main>
+        <!-- Main hero section -->
+        <section aria-label="Hero section"
+            style="background-color: white; border-bottom: 1px solid; border-color: hsl(213 27% 88%);">
+            <div>
+                <div
+                    style="text-align: center; font-family: sans-serif; padding: 2rem 1.5rem 2rem 1.5rem;max-width:56rem; margin:0 auto;">
+                    <h1
+                        style="color: hsl(213 27% 16%);font-size: 2.25rem;line-height: 2.5rem; font-weight: 700; margin-bottom: 1rem;">
+                        HTML5 Assignment Demo</h1>
+                    <p style="color:hsl(213 16% 50%); line-height: 1.625;font-size: 1.125rem; ">
+                        This page demonstrates essential HTML5 elements including
+                        semantic structure, lists, tables, media elements, and comprehensive form controls with proper
+                        validation and accessibility features.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Media -->
+        <section>
+            <div style="justify-content: center; align-items: center;margin: 0 auto;">
+                <img src="https://gillencomputing.wordpress.com/wp-content/uploads/2016/05/htmlform.png"
+                    alt="html form processing" width="40%" height="20%" style="margin-left: 400px;margin-right: 400px; 
+            </div>
+        </section>
+        <!-- List Demonstration -->
+        <Section aria-label="List demonstration" style="margin-top: 48px;">
+            <div style="margin: 0 auto;">
+                <h2
+                    style="text-align: center; color: hsl(213 27% 16%);font-weight: 600;font-size: 1.875rem;line-height: 2.25rem;">
+                    Lists Demonstration</h2>
+                <!-- Cards Wrapper div -->
+                <div style="display: flex; flex-direction: row; gap: 2rem;margin-left: 400px; ">
+                    <div
+                        style="background-color: white; border-color: hsl(213 27% 88%); border: 1px solid; color: hsl(213 27% 16%); background-color: hsl(0 0% 100%); padding: 1.5rem; border-width: 1px; border-radius: 8px; text-align:left; max-width: 360px; box-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);;">
+                        <h3
+                            style="color: hsl(213 27% 16%); font-weight: 600; font-size: 1.125rem; line-height: 1.75rem; margin-bottom: 1rem;">
+                            Steps to Create an HTML5 Page (Ordered List)</h3>
+                        <ol type="1" style="color: hsl(213 27% 16%);">
+                            <li>Set up the HTML5 document structure</li>
+                            <li>Add semantic HTML elements</li>
+                            <li>Include proper meta tags</li>
+                            <li>Implement form controls with validation</li>
+                            <li>Test accessibility features</li>
+                            <li>Validate markup with W3C validator</li>
+                        </ol>
+                    </div>
+                    <div
+                        style="background-color: white; border-color: hsl(213 27% 88%); border: 1px solid; color: hsl(213 27% 16%); background-color: hsl(0 0% 100%); padding: 1.5rem; border-width: 1px; border-radius: 8px; text-align:left; box-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);;">
+                        <h3
+                            style="color: hsl(213 27% 16%); font-weight: 600; font-size: 1.125rem; line-height: 1.75rem; margin-bottom: 1rem;">
+                            HTML5 Key Features (Unordered List)
+                        </h3>
+                        <ul style="color: hsl(213 27% 16%);">
+                            <li>Semantic elements (header, main, section, article)</li>
+                            <li>Enhanced form input types</li>
+                            <li>Built-in form validation</li>
+                            <li>Accessibility improvements</li>
+                            <li>Media element support</li>
+                            <li>Local storage capabilities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </Section>
+        <!-- Table Demonstration -->
+        <section style="margin-top: 48px; border-color: hsl(213 27% 88%);">
+            <div>
+                <h2
+                    style="color:hsl(213 27% 16%);font-weight: 600; font-size: 1.875rem; line-height: 2.25rem; margin: 0; text-align: center;">
+                    Data Table</h2>
+
+                <div
+                    style="color: hsl(213 27% 16%); box-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);padding: 1.5rem; background-color: hsl(0 0% 100%); border-radius: 8px; border-width: 1px; border-color: hsl(213 27% 88%); margin-left: 200px; margin-right: 200px;">
+                    <h3
+                        style="color: hsl(213 27% 16%); font-weight: 600; font-size:1.25rem;line-height: 1.75rem; margin-bottom: 1rem; margin: 0;">
+                        Web Development Course Schedule</h3>
+                    <div style="overflow-y: auto; border-color: hsl(213 27% 88%);">
+                        <table style="border-collapse: collapse; width: 100%;">
+
+                            <thead style="border-color:hsl(213 27% 88%);">
+                                <tr>
+                                    <th>Week</th>
+                                    <th>Topic</th>
+                                    <th>Assignment</th>
+                                    <th>Due Date</th>
+                                </tr>
+                            </thead>
+                            <tbody style="border-color: hsl(213 27% 88%);">
+                                <tr>
+                                    <td>1</td>
+                                    <td>HTML5 Basics</td>
+                                    <td>Structure Demo</td>
+                                    <td>Jan 15</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Forms & Validation</td>
+                                    <td>Contact Form</td>
+                                    <td>Jan 22</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>CSS Integration</td>
+                                    <td>Styled Page</td>
+                                    <td>Jan 29</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Accessibilty</td>
+                                    <td>WCAG Compliance</td>
+                                    <td>Feb 5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Form Demonstration -->
+        <section>
+            <h2 style="text-align: center;">Complete HTML5 Form</h2>
+            <div
+                style="color: hsl(213 27% 16%); padding: 1.5rem; border-width: 1px; border-radius: 8px; background-color: hsl(0 0% 100%); border-color: hsl(213 27% 88%);margin-left: 200px; margin-right: 200px;">
+                <form action="" method="post" style="border-color: hsl(213 27% 88%);">
+                    <fieldset
+                        style="padding: 1.5rem; border-width: 1px; border-radius: 8px; border-color: hsl(213 27% 88%);">
+                        <legend>Personal Information</legend>
+                        <div
+                            style="grid-template-columns:repeat(2, minmax(0, 1fr));gap:3rem; display: grid; border-color: hsl(213 27% 88%);">
+                            <div>
+                                <label for="name"> Full Name*</label>
+                                <input type="text" id="fullname" name="name" maxlength="50"
+                                    placeholder="Enter your full name" required>
+
+                            </div>
+                            <div>
+                                <label for="email">Email Address</label>
+                                <input type="email" name="email" placeholder="example@example.com">
+
+                            </div>
+                        </div>
+                        <div
+                            style="grid-template-columns:repeat(2, minmax(0, 1fr));gap:3rem; display: grid; border-color: hsl(213 27% 88%);">
+                            <div>
+                                <label for="password">Password*</label>
+                                <input type="password" minlength="6" name="password" id="password"
+                                    placeholder="Minimum 6 characters" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="date of birth"> Date of Birth</label>
+                                <input type="date" name="date of birth" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="age">Age</label>
+                            <input type="number" name="age" id="age" maxlength="3" required>
+
+                        </div>
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Course Preferences</legend>
+                        <div>
+                            <label for="experience"></label>
+                            <select>
+                                <option value="" selected disabled placeholder="Select your experience level">Select
+                                    your experience level</option>
+                                <option value="option1">Beginner</option>
+                                <option value="option2">Intermediate</option>
+                                <option value="option3">Advanced</option>
+                                <option value="option4">Expert</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        <label for="goal"> Learning Goals</label>
+                        <textarea name="goal" id=" learning_goals" rows="10"
+                            placeholder="Tell us about your learning objectives"></textarea>
+                    </fieldset>
+
+                    <div style="display:flex; margin-top: 32px; margin-bottom: 32px; gap: 1rem; padding-top: 1rem;">
+                        <div>
+                            <button type="submit"
+                                style="color: hsl(0 0% 100%);font-weight: 500;font-size: .875rem;line-height: 1.25rem;padding: .5rem 1rem .5rem 1rem; background-color: hsl(213 94% 68%); border-radius: 6px; border: none;">Submit
+                                Application</button>
+                        </div>
+                        <div>
+                            <button type="reset"
+                                style="color: hsla(0, 5%, 8%, 0.512);font-weight: 500;font-size: .875rem;line-height: 1.25rem;padding: .5rem 1rem .5rem 1rem; background-color: hsl(210, 20%, 98%); border-radius: 6px;">Reset
+                                form</button>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
